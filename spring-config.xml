@@ -7,5 +7,13 @@
         <property name="message" value="hello world" />
     </bean>
 
+    <bean id="textEditor" class="test.TextEditor">
+        <constructor-arg ref="spellChecker" />
+    </bean>
+
+    <bean id="spellChecker" class="test.SpellChecker" >
+
+    </bean>
+
     <bean class="test.InitHelloWorld" />
 </beans>
