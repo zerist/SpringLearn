@@ -3,7 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <bean id="helloWorld" class="test.HelloWorld">
+    <bean id="helloWorld" class="test.HelloWorld" init-method="init" destroy-method="destory">
         <property name="message" value="hello world" />
     </bean>
+
+    <bean class="test.InitHelloWorld" />
 </beans>
