@@ -3,7 +3,7 @@ import org.aspectj.lang.annotation.*;
 
 @Aspect
 public class Logging2 {
-    @Pointcut("execution(* testAop.Student.*(..))")
+    @Pointcut("execution(* testAop.Student2.*(..))")
     private void selectAll(){}
 
     @Before("selectAll()")
