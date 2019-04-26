@@ -7,6 +7,8 @@
         <property name="message" value="hello world" />
     </bean>
 
+    <bean id="cStartEventHandler" class="test.CStartEventHandler" />
+
     <bean id="textEditor" class="test.TextEditor">
         <constructor-arg ref="spellChecker" />
     </bean>
