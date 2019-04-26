@@ -15,7 +15,7 @@ public class HelloWorld {
         System.out.println("Bean init");
     }
 
-    public void destory(){
-        System.out.println("Bean destory");
+    public void destroy(){
+        System.out.println("Bean destroy");
     }
 }
