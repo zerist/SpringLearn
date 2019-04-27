@@ -30,7 +30,7 @@ public class StudentJDBCTemplate implements StudentDAO{
         try{
             String sql1 = "insert into Student (name, age) values (?, ?)";
             jdbcTemplate.update(sql1, name, age);
-            String sql2 = "select max(id) from Student where ";
+            String sql2 = "select max(id) from Student ";
             Integer sid = jdbcTemplate.queryForObject(sql2, Integer.class);
             String sql3 = "insert into marks(sid, marks, year) values (?,?,?)";
             jdbcTemplate.update(sql3, sid, marks, year);
